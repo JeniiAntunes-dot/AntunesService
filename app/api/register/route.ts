@@ -16,7 +16,6 @@ export async function POST(req: NextRequest) {
       password,
       options: {
         data: { name, phone, isProvider: role === 'oferecer', verified: true },
-        emailRedirectTo: null, 
       },
     });
 
